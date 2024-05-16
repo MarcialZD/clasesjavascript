@@ -1,8 +1,8 @@
 [
-    {"id": 1, "name":"Frank", "edad": 11, "dni": "12345678A", "estado_civil": "soltero","img":"img/f.png"},
-    {"id": 2, "name":"Rogger", "edad": 25, "dni": "87654321B", "estado_civil": "casado","img":"img/r.png"},
-    {"id": 3, "name":"Luis", "edad": 40, "dni": "56781234C", "estado_civil": "soltero","img":"img/l.png"},
-    {"id": 4, "name":"Felipe", "edad": 35, "dni": "43215678D", "estado_civil": "divorciado","img":"img/fel.png"},
-    {"id": 5, "name":"Rosa", "edad": 28, "dni": "34567812E", "estado_civil": "casado","img":"img/ro.png"},
-    {"id": 6, "name":"Miguel", "edad": 33, "dni": "67812345F", "estado_civil": "viudo","img":"img/m.png"}
+    {"id": 1, "name":"Frank", "edad": 11, "dni": "12345678", "estado_civil": "soltero","img":"img/f.png"},
+    {"id": 2, "name":"Rogger", "edad": 25, "dni": "87654321", "estado_civil": "casado","img":"img/r.png"},
+    {"id": 3, "name":"Luis", "edad": 40, "dni": "56781234", "estado_civil": "soltero","img":"img/l.png"},
+    {"id": 4, "name":"Felipe", "edad": 35, "dni": "43215678", "estado_civil": "divorciado","img":"img/fel.png"},
+    {"id": 5, "name":"Rosa", "edad": 28, "dni": "34567812", "estado_civil": "casado","img":"img/ro.png"},
+    {"id": 6, "name":"Miguel", "edad": 33, "dni": "67812345", "estado_civil": "viudo","img":"img/m.png"}
 ]
