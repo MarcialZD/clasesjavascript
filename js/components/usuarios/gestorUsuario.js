@@ -51,26 +51,32 @@ class GestorUsuarios {
     }
     renderizarUsuarios(usuarios) {
         //usuarios ==> Array
-        usuarios.forEach(usuario => {
-            $('#mainlogin').append(`<div class="usuario">Nombre</div>`);
-
-            $('#mainlogin').append(`<div class="usuario">${usuario.name}</div>`);
-            $('#mainlogin').append(`<div class="usuario">Edad</div>`);
-
-            const color = usuario.edad < 18 ? "red" : "blue";
-            $('#mainlogin').append(`<div class="usuario" style="color:${color};">${usuario.edad}</div>`);
-            
-            $('#mainlogin').append(`<div class="usuario">DNI</div>`);
-
-            $('#mainlogin').append(`<div class="usuario">${usuario.dni}</div>`);
-            $('#mainlogin').append(`<div class="usuario">Estado Civil</div>`);
-
-            $('#mainlogin').append(`<div class="usuario">${usuario.estado_civil}</div>`);
-            $('#mainlogin').append(`<div class="usuario">Foto </div>`);
-
-            $('#mainlogin').append(`<div class="usuario"><img src="${usuario.img}" alt="">
-            </div>`);
-        });
+        $('#mainlogin').append(`
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>DNI</th>
+                <th>Estado Civil</th>
+                <th>Foto</th>
+            </tr>
+    `);
+    
+    usuarios.forEach(usuario => {
+        const color = usuario.edad < 18 ? "red" : "blue";
+        $('#mainlogin table').append(`
+            <tr>
+                <td>${usuario.name}</td>
+                <td style="color:${color};">${usuario.edad}</td>
+                <td>${usuario.dni}</td>
+                <td>${usuario.estado_civil}</td>
+                <td class="usuario"><img src="${usuario.img}" alt=""></td>
+            </tr>
+        `);
+    });
+    
+    $('#mainlogin').append(`</table>`);
+    
     }
     renderLogin() {
         const templatelogin = `<div class="inputLogin">
