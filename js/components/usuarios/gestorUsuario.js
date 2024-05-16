@@ -4,7 +4,7 @@ class GestorUsuarios {
         this.servicios = new Servicios();
         //todas las variables que deben inicializarse
         this.token = '';
-        this.usuarios = []; 
+        this.usuarios = [];
         //LOS USUARIOS DE LA FUNCION GESTORUSUARIOS
         this.init();
     }
@@ -52,7 +52,24 @@ class GestorUsuarios {
     renderizarUsuarios(usuarios) {
         //usuarios ==> Array
         usuarios.forEach(usuario => {
+            $('#mainlogin').append(`<div class="usuario">Nombre</div>`);
+
             $('#mainlogin').append(`<div class="usuario">${usuario.name}</div>`);
+            $('#mainlogin').append(`<div class="usuario">Edad</div>`);
+
+            const color = usuario.edad < 18 ? "red" : "blue";
+            $('#mainlogin').append(`<div class="usuario" style="color:${color};">${usuario.edad}</div>`);
+            
+            $('#mainlogin').append(`<div class="usuario">DNI</div>`);
+
+            $('#mainlogin').append(`<div class="usuario">${usuario.dni}</div>`);
+            $('#mainlogin').append(`<div class="usuario">Estado Civil</div>`);
+
+            $('#mainlogin').append(`<div class="usuario">${usuario.estado_civil}</div>`);
+            $('#mainlogin').append(`<div class="usuario">Foto </div>`);
+
+            $('#mainlogin').append(`<div class="usuario"><img src="${usuario.img}" alt="">
+            </div>`);
         });
     }
     renderLogin() {
