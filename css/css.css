@@ -1,0 +1,13 @@
+.usuario {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.usuario:nth-child(odd) {
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+
+.usuario img {
+    max-width: 100px;
+}
